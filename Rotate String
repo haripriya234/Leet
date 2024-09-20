@@ -1,3 +1,9 @@
+Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+A shift on s consists of moving the leftmost character of s to the rightmost position.
+
+For example, if s = "abcde", then it will be "bcdea" after one shift.
+
 #All rotations of A are contained in A+A. Thus, we can simply check whether B is a substring of A+A. We also need to check A.length == B.length, otherwise we will fail cases like A = "a", B = "aa".
 
 class Solution {
